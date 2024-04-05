@@ -4,13 +4,13 @@ import pandas as pd
 import pickle
 
 # Load datasets and model
-sym_des = pd.read_csv("C:/Users/ayush/OneDrive/Desktop/Health Disease Prediction/datasets/description.csv")
-precautions = pd.read_csv("C:/Users/ayush/OneDrive/Desktop/Health Disease Prediction/datasets/precautions_df.csv")
-workout = pd.read_csv("C:/Users/ayush/OneDrive/Desktop/Health Disease Prediction/datasets/workout_df.csv")
-description = pd.read_csv("C:/Users/ayush/OneDrive/Desktop/Health Disease Prediction/datasets/description.csv")
-medications = pd.read_csv('C:/Users/ayush/OneDrive/Desktop/Health Disease Prediction/datasets/medications.csv')
-diets = pd.read_csv("C:/Users/ayush/OneDrive/Desktop/Health Disease Prediction/datasets/diets.csv")
-svc = pickle.load(open('C:/Users/ayush/OneDrive/Desktop/Health Disease Prediction/svc.pkl', 'rb'))
+sym_des = pd.read_csv("description.csv")
+precautions = pd.read_csv("precautions_df.csv")
+workout = pd.read_csv("workout_df.csv")
+description = pd.read_csv("description.csv")
+medications = pd.read_csv('medications.csv')
+diets = pd.read_csv("diets.csv")
+svc = pickle.load(open('svc.pkl', 'rb'))
 
 # Define helper functions
 def helper(dis):
